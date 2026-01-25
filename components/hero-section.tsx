@@ -77,11 +77,13 @@ export function HeroSection() {
 
               {/* Paragraph */}
               <p className="text-[#9CA3AF] text-lg max-w-xl leading-snug text-justify">
-                Passionate and professional Software Engineer with expertise in development, 
-                quality assurance, and MERN stack projects. Skilled in automation and manual 
-                testing using tools such as Selenium and Cypress. Committed to delivering 
-                high-quality, reliable, and scalable software solutions with strong problem-solving 
-                abilities and meticulous attention to detail.
+                Passionate Software Engineer with expertise in both development
+                and quality assurance. Skilled in MERN stack development and 
+                experienced with automation and manual testing using tools such 
+                as Selenium and Cypress. Committed to delivering high-quality,
+                 reliable software through meticulous testing and efficient development
+                 practices. Strong problem-solving abilities and attention to detail
+                  ensure robust, scalable, and maintainable solutions.
               </p>
             </div>
 
