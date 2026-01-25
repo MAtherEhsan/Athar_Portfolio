@@ -7,7 +7,7 @@ import { ContactSection } from '@/components/contact-section';
 import { Footer } from '@/components/footer';
 
 export const metadata = {
-  title: 'Muhammad Athar Ehsan | Software Engineer & QA Expert',
+  title: "M Athar Ehsan's Portfolio",
   description:
     'Professional portfolio of Muhammad Athar Ehsan - Software Quality Assurance Engineer, Full Stack Developer, and Project Manager. Expertise in MERN stack, test automation, and software quality.',
   keywords: [
@@ -21,7 +21,7 @@ export const metadata = {
   ],
   authors: [{ name: 'Muhammad Athar Ehsan' }],
   openGraph: {
-    title: "M Athar Ehsan's Portfolio",
+    title: 'Muhammad Athar Ehsan | Software Engineer & QA Expert',
     description: 'Professional portfolio showcasing expertise in QA, full-stack development, and project management.',
     type: 'website',
   },
