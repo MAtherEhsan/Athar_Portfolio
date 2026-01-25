@@ -127,7 +127,7 @@ export function HeroSection() {
           <div className="flex justify-center md:justify-end">
             <div className="relative w-96 h-[30rem] sm:w-[26rem] sm:h-[34rem] rounded-2xl overflow-hidden border border-[#2563EB]/30">
               <img
-                src="/profile-placeholder.jpg"
+                src="/profile-placeholder.png"
                 alt="Profile"
                 className="w-full h-full object-cover"
               />

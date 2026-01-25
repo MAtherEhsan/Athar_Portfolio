@@ -65,7 +65,7 @@ export function Navbar() {
             className="hover:opacity-80 transition-opacity"
             >
             <Image
-             src="/profile.jpg"
+             src="/profile.png"
              alt="Muhammad Athar Ehsan"
              width={60}      // increased from 56 → 60
              height={60}     // increased from 56 → 60

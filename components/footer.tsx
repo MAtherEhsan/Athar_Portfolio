@@ -38,7 +38,7 @@ export function Footer() {
           <div className="flex items-start gap-8">
             <div className="flex-shrink-0 mt-2 ml-2">
               <Image
-                src="/profile_footer.jpg"
+                src="/profile_footer.png"
                 alt="Muhammad Athar Ehsan"
                 width={60}
                 height={60}
