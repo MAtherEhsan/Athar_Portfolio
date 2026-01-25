@@ -60,7 +60,7 @@ export function HeroSection() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="space-y-8">
-            <div className="space-y-4">
+            <div className="space-y-0">
               {/* Name in 2 lines */}
               <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-[#E5E7EB] leading-tight">
                 <span className="block" >Hi, I'm </span>
