@@ -13,7 +13,6 @@ export function Navbar() {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 10);
 
-      // Track active section
       const sections = ['home', 'features', 'projects', 'resume', 'contact'];
       for (const section of sections) {
         const element = document.getElementById(section);
@@ -26,13 +25,13 @@ export function Navbar() {
         }
       }
     };
+
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    element?.scrollIntoView({ behavior: 'smooth' });
+    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
     setIsOpen(false);
   };
 
@@ -48,39 +47,45 @@ export function Navbar() {
     { icon: Github, href: 'https://github.com/MAtherEhsan', label: 'GitHub' },
     { icon: Linkedin, href: 'https://linkedin.com/in/muhammadatharehsan', label: 'LinkedIn' },
     { icon: Mail, href: 'mailto:muhammadatharehsan2@gmail.com', label: 'Email' },
-    { icon: MessageCircle, href: 'https://wa.me/+923115585476', label: 'WhatsApp' },
+    { icon: MessageCircle, href: 'https://wa.me/923046000182', label: 'WhatsApp' },
   ];
 
   return (
     <nav
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-[#0B0F19]/95 backdrop-blur border-b border-[#1F2937]' : 'bg-transparent'
+        isScrolled
+          ? 'bg-[#0B0F19]/95 backdrop-blur border-b border-[#1F2937]'
+          : 'bg-transparent border-b border-[#1F2937]'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center py-2 ">
-          {/* Logo with Image */}
+      <div className="w-full px-2 sm:px-4 lg:px-16">
+        <div className="flex items-center py-2">
+
+          {/* LEFT MOST — LOGO */}
           <button
             onClick={() => scrollToSection('home')}
             className="hover:opacity-80 transition-opacity"
-            >
+          >
             <Image
-             src="/profile.png"
-             alt="Muhammad Athar Ehsan"
-             width={60}      // increased from 56 → 60
-             height={60}     // increased from 56 → 60
-             className="rounded-full"
-             priority
+              src="/profile.png"
+              alt="Muhammad Athar Ehsan"
+              width={60}
+              height={60}
+              className="rounded-full"
+              priority
             />
           </button>
 
-          {/* Desktop Navigation */}
+          {/* FLEX SPACER */}
+          <div className="flex-1" />
+
+          {/* RIGHT MOST — DESKTOP NAV */}
           <div className="hidden md:flex gap-8">
             {navLinks.map((link) => (
               <button
                 key={link.id}
                 onClick={() => scrollToSection(link.id)}
-                className={`transition-colors text-base font-medium ${
+                className={`text-base font-medium transition-colors ${
                   activeSection === link.id
                     ? 'text-[#38BDF8] border-b-2 border-[#38BDF8]'
                     : 'text-[#E5E7EB] hover:text-[#38BDF8]'
@@ -91,32 +96,33 @@ export function Navbar() {
             ))}
           </div>
 
-
-
-          {/* Mobile Menu Button */}
+          {/* MOBILE MENU BUTTON */}
           <button
-            className="md:hidden text-[#E5E7EB]"
+            className="md:hidden ml-4 text-[#E5E7EB]"
             onClick={() => setIsOpen(!isOpen)}
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
 
-        {/* Mobile Navigation */}
+        {/* MOBILE MENU */}
         {isOpen && (
           <div className="md:hidden bg-[#111827] border-t border-[#1F2937]">
-            <div className="px-2 pt-2 pb-4 space-y-2">
+            <div className="px-3 pt-3 pb-4 space-y-2">
               {navLinks.map((link) => (
                 <button
                   key={link.id}
                   onClick={() => scrollToSection(link.id)}
-                  className="block w-full text-left px-3 py-2 text-[#E5E7EB] hover:bg-[#1F2937] rounded transition-colors text-sm"
+                  className="block w-full text-left px-3 py-2 text-[#E5E7EB] hover:bg-[#1F2937] rounded transition-colors"
                 >
                   {link.label}
                 </button>
               ))}
+
               <div className="border-t border-[#1F2937] pt-3 mt-3">
-                <p className="text-xs font-semibold text-[#9CA3AF] px-3 mb-2">Find me on</p>
+                <p className="text-xs font-semibold text-[#9CA3AF] px-3 mb-2 uppercase tracking-wider">
+                  Find me on
+                </p>
                 <div className="flex gap-2 px-3">
                   {socialLinks.map((link) => {
                     const Icon = link.icon;
@@ -126,10 +132,9 @@ export function Navbar() {
                         href={link.href}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="w-8 h-8 bg-[#2563EB]/20 rounded flex items-center justify-center text-[#38BDF8] hover:bg-[#2563EB] transition-colors"
-                        aria-label={link.label}
+                        className="w-9 h-9 bg-[#2563EB]/20 rounded flex items-center justify-center text-[#9CA3AF] hover:text-[#E5E7EB] hover:bg-[#2563EB] transition-colors"
                       >
-                        <Icon size={20} />
+                        <Icon size={18} />
                       </a>
                     );
                   })}

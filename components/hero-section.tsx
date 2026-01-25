@@ -81,9 +81,9 @@ export function HeroSection() {
                 and quality assurance. Skilled in MERN stack development and 
                 experienced with automation and manual testing using tools such 
                 as Selenium and Cypress. Committed to delivering high-quality,
-                 reliable software through meticulous testing and efficient development
-                 practices. Strong problem-solving abilities and attention to detail
-                  ensure robust, scalable, and maintainable solutions.
+                reliable software through meticulous testing and efficient development
+                practices. Strong problem-solving abilities and attention to detail
+                ensure robust, scalable, and maintainable solutions.
               </p>
             </div>
 
