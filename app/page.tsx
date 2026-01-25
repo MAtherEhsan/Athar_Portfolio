@@ -21,7 +21,7 @@ export const metadata = {
   ],
   authors: [{ name: 'Muhammad Athar Ehsan' }],
   openGraph: {
-    title: 'Muhammad Athar Ehsan | Software Engineer & QA Expert',
+    title: "M Athar Ehsan's Portfolio",
     description: 'Professional portfolio showcasing expertise in QA, full-stack development, and project management.',
     type: 'website',
   },
