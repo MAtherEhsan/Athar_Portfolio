@@ -86,11 +86,11 @@ export function HeroSection() {
             </div>
 
             {/* Social & Tech Stack */}
-            <div className="flex flex-col lg:flex-row gap-8">
+            <div className="flex flex-col lg:flex-row gap-20">
               {/* Social Links */}
               <div>
-                <p className="text-sm font-semibold text-[#E5E7EB] mb-3">Find me on</p>
-                <div className="grid grid-cols-2 gap-3 w-fit">
+                <p className="text-lg font-semibold text-gray-400 uppercase mb-3 font-sans tracking-widest">Find me on</p>
+                <div className="grid grid-cols-2 gap-4 w-fit">
                   {socialLinks.map((link) => {
                     const Icon = link.icon;
                     return (
@@ -112,8 +112,8 @@ export function HeroSection() {
 
               {/* Tech Stack */}
               <div>
-                <p className="text-sm font-semibold text-[#E5E7EB] mb-3">Tech Stack</p>
-                <div className="grid grid-cols-2 gap-3 w-fit">
+                <p className="text-lg font-semibold text-gray-400 uppercase mb-3 font-sans tracking-widest">Tech Stack</p>
+                <div className="grid grid-cols-2 gap-4 w-fit">
                   {techStack.map((tech) => (
                     <div
                       key={tech.name}
@@ -130,7 +130,7 @@ export function HeroSection() {
 
           {/* Right Side - Profile Image */}
           <div className="flex justify-start md:pl-12 lg:pl-9">
-            <div className="relative w-80 sm:w-96 md:w-[34rem] h-100 sm:h-110 md:h-[40rem] rounded-2xl overflow-hidden border border-[#2563EB]/30">
+            <div className="relative w-[19rem] sm:w-[23rem] md:w-[30rem] h-100 sm:h-110 md:h-[40rem] rounded-2xl overflow-hidden border border-[#2563EB]/30">
                 <img
                 src="/profile-placeholder.png"
                 alt="Profile"
