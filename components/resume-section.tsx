@@ -234,6 +234,42 @@ export function ResumeSection() {
           {/* Experience Tab */}
           {activeTab === 'experience' && (
             <div className="space-y-6">
+
+              <div className="bg-[#0B0F19] border border-[#1F2937] rounded-xl p-8">
+                <div className="flex items-start justify-between mb-3">
+                  <div>
+                    <h3 className="text-2xl font-bold text-[#E5E7EB]">
+                       SQA Intern
+                    </h3>
+                    <p className="text-[#38BDF8] font-semibold text-lg">
+                       Easykaam (Startup)
+                    </p>
+                    </div>
+                     <span className="text-[#38BDF8] font-semibold text-base bg-[#2563EB]/20 px-3 py-1 rounded">
+                        Nov 2025 – Jan 2026
+                       </span>
+                  </div>
+
+                  <p className="text-[#9CA3AF] mb-4 text-lg">
+                    Worked as a Software Quality Assurance Intern on Easykaam’s mobile application,
+                    a platform providing household maintenance services, focusing on product stability
+                    and release quality.
+                   </p>
+                    <ul className="space-y-2">
+                     {[
+                      'Conducted manual testing of Easykaam’s mobile application',
+                      'Identified, documented, and tracked bugs to ensure high-quality releases',
+                      'Collaborated closely with developers to verify fixes',
+                      'Helped improve application stability and overall performance',
+                      ].map((responsibility, idx) => (
+                        <li key={idx} className="text-[#9CA3AF] text-lg flex items-start gap-2">
+                          <span className="text-[#38BDF8] mt-1">→</span>
+                           {responsibility}
+                        </li>
+                      ))}
+                   </ul>
+                </div>
+
               <div className="bg-[#0B0F19] border border-[#1F2937] rounded-xl p-8">
                 <div className="flex items-start justify-between mb-3">
                   <div>
