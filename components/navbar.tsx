@@ -69,8 +69,8 @@ export function Navbar() {
             <Image
               src="/profile.png"
               alt="Muhammad Athar Ehsan"
-              width={80}
-              height={80}
+              width={100}
+              height={100}
               className="rounded-full"
               priority
             />
