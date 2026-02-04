@@ -62,19 +62,19 @@ export function Navbar() {
         <div className="flex items-center py-2">
 
           {/* LEFT MOST — LOGO */}
-          <button
-            onClick={() => scrollToSection('home')}
-            className="hover:opacity-80 transition-opacity"
-          >
-            <Image
-              src="/profile.png"
-              alt="Muhammad Athar Ehsan"
-              width={60}
-              height={60}
-              className="rounded-full"
-              priority
-            />
-          </button>
+          <div className="flex items-center gap-3">
+  <Image
+    src="/profile.png"
+    alt="Profile"
+    width={60}
+    height={60}
+    className="rounded-full"
+  />
+
+  <span className="text-lg font-semibold tracking-wide">
+    Muhammad Athar Ehsan
+  </span>
+</div>
 
           {/* FLEX SPACER */}
           <div className="flex-1" />
